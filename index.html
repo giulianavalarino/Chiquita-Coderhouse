@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="multimedia/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--link a css-->
     <link rel="stylesheet" href="css/estilos.css">    
     <title>Home</title>
@@ -38,12 +39,12 @@
                 <p>Chiquita es mucho más que un restaurante. Pretendemos brindar un espacio alegre, moderno y amigable en el que los clientes puedan distenderse, disfrutar y socializar. El local presenta un ambiente bohemio y colorido en el que las personas pueden compartir experiencias y disfrutar de un menú variado y auténtico. ¡Te esperamos!</p>
             </div>
             <div class="item item2">
-                <img class="img1" src="multimedia/señalética.jpg" alt="Señaletica del lugar">
+                <img data-aos="fade-left" class="img1" src="multimedia/señalética.jpg" alt="Señaletica del lugar">
             </div>
             </section>
             <section class="bloque2">
             <div class="item item3">
-                <img class="img1" src="multimedia/menu.jpg" alt="Menu del lugar">
+                <img data-aos="fade-right" class="img1" src="multimedia/menu.jpg" alt="Menu del lugar">
             </div>
             <div class="item item4">
                 <h2>Qué ofrecemos</h2>
@@ -55,7 +56,7 @@
                 <h3>Nuestra ubicación:</h3>
             </div>
             <div class="item item6">
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13087.430358149848!2d-56.15911382963929!3d-34.910023186097575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f810da5ba5265%3A0x7e2c48069abb0e84!2sPocitos%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1658213227936!5m2!1ses-419!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe data-aos="fade-left" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13087.430358149848!2d-56.15911382963929!3d-34.910023186097575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f810da5ba5265%3A0x7e2c48069abb0e84!2sPocitos%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1658213227936!5m2!1ses-419!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             </section>
         </main>
@@ -74,5 +75,9 @@
     <!--inicio boton de subir-->
         <a href="#" class="subir"><i class="fa-solid fa-chevron-up"></i></a>
     <!--fin boton de subir-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

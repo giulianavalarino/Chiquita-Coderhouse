@@ -237,7 +237,7 @@ p{
     padding: 30px;
     margin: 15px 10px 15px 950px;
     border-radius: 4px;
-    background-color: #ffe0dd;
+    background-image: linear-gradient(to right top, #ff774c, #ffe0dd, #ff774c);
     border: solid 2px #ff774c;
     margin-top: 50px;
     border-radius: 5px;
@@ -248,7 +248,7 @@ p{
     grid-area: header;
     display: flex;
     font-family: betty;
-    background-color: #079ead;
+    background-image: linear-gradient(to bottom, #079ead, #079ead, #ffe0dd);
     height: 140px;
     width: auto;
     font-size: 25px;
@@ -296,7 +296,7 @@ nav li{
 footer{
     height: 200px;
     width: auto;
-    background-color: #079ead;
+    background-image: linear-gradient(to top, #079ead, #079ead, #ffe0dd);
     font-family: appleGaramond;
     text-align: center;
     padding: 20px;
