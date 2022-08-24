@@ -87,6 +87,9 @@ padding: 20px;
 }
 
 /*css productos*/
+.sectorProductos{
+    text-align: center;
+}
 .card{
     margin: 15px;
     padding: 5px;
