@@ -14,7 +14,6 @@ body{
     background-size: cover;
     background-position: left;
 }
-
 h1{
     font-family: appleGaramond;
     text-align: center;
@@ -44,170 +43,77 @@ p{
 }
 
 /*css index + nosotros*/
-.grilla1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header header"
-                        "main1 main1"
-                        "footer footer";
+.jumbotron{
+width: 100%;
+margin: 15px 30px 15px 30px;
+background-color: #ffe0dd;
+border-radius: 0;
+padding: 20px;
 }
-.bloque1{
-    height: 420px;
-    width: auto;
+.ar1{
+    background-image: url(../multimedia/señalética.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.al2{
+    background-image: url(../multimedia/menu.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.row{
     background-color: #ffe0dd;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
     margin: 15px;
-    padding: 30px 15px 30px 20px;
+    padding: 20px;
 }
-.bloque2{
-    height: 420px;
-    width: auto;
-    background-color: #ffe0dd;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 15px;
-    padding: 30px 15px 30px 20px;
+.ar3{
+    background-image: url(../multimedia/restaurante-uno.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
-.bloque3{
-    height: 420px;
-    width: auto;
-    background-color: #ffe0dd;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 15px;
-    padding: 30px 15px 30px 20px;
+.al4{
+    background-image: url(../multimedia/restaurante-dos.jfif.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
+
 .main1{
-    grid-area: main1;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-}
-.item{
-    grid-area: item;
-    height: auto;
-    width: 550px;
-    margin: 20px;
-}
-.item2{
-    margin-left: 55px;
-}
-.item3{
-    margin-left: 40px;
-}
-.map{
-    width: 100%;
-    height: 300px;
-}
-.img1{
-    width: 100%;
-    height: auto;
 }
 
 /*css productos*/
-.contenedorProductos{
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 20px;
-    padding: 60px;
-    grid-template-areas: "prod1 prod2 prod3"
-                        "prod4 prod5 prod6";
-}
-.producto1{
-    grid-area: prod1;
-    background-image: url(../multimedia/papelería.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.producto2{
-    grid-area: prod2;
-    background-image: url(../multimedia/remeras.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.producto3{
-    grid-area: prod3;
-    background-image: url(../multimedia/buzos.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.producto4{
-    grid-area: prod4;
-    background-image: url(../multimedia/jugos.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.producto5{
-    grid-area: prod5;
-    background-image: url(../multimedia/bolsas.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.producto6{
-    grid-area: prod6;
-    background-image: url(../multimedia/café.png);
-    background-size: cover;
-    background-position: center;
-}
-.productos{
-    border: 2px solid rgb(148, 22, 43);
-    width: 300px;
-    height: 100%;
+.card{
+    margin: 15px;
+    padding: 5px;
+    background-color: #ff774c;
     text-align: center;
-    text
-    border-radius: 10px;
     box-shadow: 1px 1px 5px black;
-    filter: grayscale(40%);
 }
-.productos:hover{
+.btn{
+    font-family: Betty;
+    color: #ffe0dd;
+    background-color: #079ead;
+}
+.card-text{
+    text-align: center;
+}
+.card-img-top:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     filter: grayscale(0%);
     filter: saturate(1.2);
 }
-.productos a{
-    background-color: #079ead;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    position:;
-}
-.productos a:hover{
-    background-color: #000000;
-    transition: all 0.8s;
-    border: solid 2px #ffe0dd;
+.card-img-top{
+border-radius: 10px;
+filter: grayscale(40%);
 }
 
 /*css funciones*/
-.grilla2{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header"
-                        "main2"
-                        "footer";
-}
-.main2{
-    grid-area: main2;
-}
 #multimedia{
     height: 400px;
     width: 100%;
@@ -215,27 +121,20 @@ p{
 }
 
 /*css contacto*/
-.grilla3{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header"
-                        "main3"
-                        "footer";
-}
 .main3{
-    margin: 15px;
+    margin: 30px;
     grid-area: main3;
     background-image: url(../assets/img/orange.jpg);
+    padding: 10px;
 }
-.formulario{
+form{
     text-align: left;
     font-family: secondaryFont;
-    font-size: 25px;
-    height: 500px;
+    font-size: 20px;
+    height: auto;
     width: 300px;
     padding: 30px;
-    margin: 15px 10px 15px 950px;
+    margin: 30px;
     border-radius: 4px;
     background-image: linear-gradient(to right top, #ff774c, #ffe0dd, #ff774c);
     border: solid 2px #ff774c;
@@ -244,55 +143,41 @@ p{
 }
 
 /*css header + nav*/
-.header{
-    grid-area: header;
-    display: flex;
-    font-family: betty;
-    background-image: linear-gradient(to bottom, #079ead, #079ead, #ffe0dd);
-    height: 140px;
-    width: auto;
-    font-size: 25px;
-    padding: 25px;
-    margin: 15px;
+header{
     justify-content: space-between;
+    display: flex;
+    width: auto !important;
+    background-image: linear-gradient(to bottom, #079ead, #079ead, #ffe0dd);
+    margin: 15px;
+}
+.navbar{
+    margin: 15px;
+    font-family: Betty;
+    font-size: 20px;
+    color: #ffe0dd;
+    list-style: none;
 }
 nav li{
-    padding: 10px;
-    list-style: none;
+    padding: 15px;
     display: inline-block;
-    padding-top: 33px;
-}
-.nav a{
-    text-decoration: none;
-    color: #ffe0dd;
-}
-.nav a:hover{
-    color: rgb(0, 0, 0);
 }
 .logo{
-    width: 120px;
+    width: 150px !important;
+    margin: 15px;
 }
 .logo:hover{
     transform: scale(1.1);
     transition: all 0.7s;
 }
-.checkbtn{
-    font-size: 80px;
-    color: #ffffff;
-    float: right;
-    margin-right: 50px;
-    line-height: 0px;
-    cursor: pointer;
-    display: none;
+nav a{
+    text-decoration: none !important;
+    color: #ffe0dd;
 }
-#check{
-    display: none;
+nav a:hover{
+    color: #000000;
 }
 
 /*css footer*/
-.footer{
-    grid-area: footer;
-}
 footer{
     height: 200px;
     width: auto;
@@ -345,259 +230,3 @@ footer i{
     src: url(../assets/fonts/apple_garamond/AppleGaramond.ttf);
 }
 
-/*vista tablet*/
-@media only screen and (min-width: 534px) and (max-width: 1289px){
-    .grilla1{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "header header"
-                            "main1 main1"
-                            "footer footer";
-    }
-    .header{
-        display: flex;
-        height: 400px;
-        width: auto;
-        text-align: center;  
-        flex-direction: column;
-    }
-    .nav{
-    display: inline-block;
-    }
-    .logo{
-        width: 350px;
-    }
-    
-    .bloque1{
-        height: auto;
-        width: auto;
-        margin: 15px;
-        padding: 30px 15px 30px 20px;
-    }
-    .bloque2{
-        height: auto;
-        width: auto;
-        background-color: #ffe0dd;
-        margin: 15px;
-        padding: 30px 15px 30px 20px;
-    }
-    .bloque3{
-        height: auto;
-        width: 100%;
-        background-color: #ffe0dd;
-        margin: 15px;
-        padding: 20px 15px 20px 20px;
-    }
-    .item{
-        height: auto;
-        width: 100%;
-        margin: 20px;
-    }
-    .map{
-        width: 100%;
-        height: 300px;
-    }
-    .img1{
-        width: 100%;
-        height: auto;
-    }
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 35px;
-    }
-    p{
-        font-size: 25px;
-    }
-    h3{
-        font-size: 30px;
-    }
-    h4{
-        font-size: 20px;
-    }
-    footer{
-        height: 200px;
-    }
-    footer p{
-        margin-bottom: 10px;
-        font-size: 15px;
-    }
-    footer i{
-        color: #ffe0dd;
-        font-size: 30px;
-    }
-    .subir{
-        height: 80px;
-        width: 80px;
-        font-size: 40px;
-        line-height: 80px;
-    }
-    .contenedorProductos{
-        height: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px 200px;
-        grid-template-areas: "prod1 prod2"
-                            "prod3 prod4" 
-                            "prod5 prod6";
-    }
-    .productos{
-        width: 220px;
-        height: 100%;
-        text-align: center;
-        text
-        border-radius: 10px;
-        box-shadow: 1px 1px 5px black;
-        filter: grayscale(40%);
-    }
-    .formulario{
-        font-size: 35px;
-        height: 800px;
-        width: 300px;
-        margin: 15px 10px 15px 80px;
-        border-radius: 4px;
-    }
-}
-
-/*vista celular*/
-@media only screen and (max-width: 533px){
-    .grilla1{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "header"
-                            "main1"
-                            "footer";
-    }
-    .logo{
-        width: 300px;
-        margin-top: 20px;
-    }
-    .header{
-        flex-direction: row;
-        height: 300px;
-        justify-content: space-between;
-    }
-    .checkbtn{
-        display: block;
-        width: 50px;
-        margin-top: 100px;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 700px;
-        background-color: #079ead;
-        top: 150px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 70px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 50px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: purple;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .bloque1{
-        height: 800px;
-        width: auto;
-        margin: 15px;
-        padding: 30px 15px 30px 20px;
-    }
-    .bloque2{
-        height: 800px;
-        width: auto;
-        background-color: #ffe0dd;
-        margin: 15px;
-        padding: 30px 15px 30px 20px;
-    }
-    .bloque3{
-        height: 500px;
-        width: auto;
-        background-color: #ffe0dd;
-        margin: 15px;
-        padding: 20px 15px 20px 20px;
-    }
-    .map{
-        width: 100%;
-        height: 300px;
-    }
-    .img1{
-        width: 100%;
-        height: auto;
-    }
-    h1{
-        font-size: 50px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    p{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 35px;
-    }
-    h4{
-        font-size: 30px;
-    }
-    footer{
-        height: 300px;
-    }
-    footer p{
-        margin-bottom: 10px;
-        font-size: 35px;
-    }
-    footer i{
-        color: #ffe0dd;
-        font-size: 40px;
-    }
-    .subir{
-        height: 80px;
-        width: 80px;
-        font-size: 40px;
-        line-height: 80px;
-    }
-    .contenedorProductos{
-        height: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px;
-        grid-template-areas: "prod1"
-                            "prod2"
-                            "prod3" 
-                            "prod4" 
-                            "prod5" 
-                            "prod6";
-    }
-    .productos{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        text
-        border-radius: 10px;
-        box-shadow: 1px 1px 5px black;
-        filter: grayscale(40%);
-    }
-    .formulario{
-        font-size: 20px;
-        height: auto;
-        width: 350px;
-        margin: 15px 15px 15px 15px;
-        border-radius: 4px;
-    }
-}
