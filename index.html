@@ -18,20 +18,36 @@
 </head>
 
 <body>
-    <!--inicio nav-->
+    <!--inicio logo + nav-->  
     <header>
-        <a class="navbar-brand" href="#">
-            <img class="logo" src="multimedia/logo-header.png" alt="Logo">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="multimedia/logo-header.png" alt="Logo">
             </a>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <li><a href="pages/nosotros.html">Nosotros</a></li>
-            <li><a href="pages/productos.html">Productos</a></li>
-            <li><a href="pages/funciones.html">Funciones</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav barra">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>        
-        <!--fin nav-->
-    <!--cierre de fila de logo + nav-->
+    </header>
+    <!--fin logo + nav-->
     <!--inicio de fila de informacion-->
     <main class="main1">
         <div class="jumbotron">
@@ -42,9 +58,9 @@
                 <aside class="col-md-6 al1">
                     <h2>Quiénes somos</h2>
                     <p>Chiquita es mucho más que un restaurante. Pretendemos brindar un espacio alegre, moderno y
-                    amigable en el que los clientes puedan distenderse, disfrutar y socializar. El local presenta un
-                    ambiente bohemio y colorido en el que las personas pueden compartir experiencias y disfrutar de
-                    un menú variado y auténtico. ¡Te esperamos!</p>
+                        amigable en el que los clientes puedan distenderse, disfrutar y socializar. El local presenta un
+                        ambiente bohemio y colorido en el que las personas pueden compartir experiencias y disfrutar de
+                        un menú variado y auténtico. ¡Te esperamos!</p>
                 </aside>
                 <aside data-aos="fade-left" class="col-md-6 ar1"></aside>
             </div>
@@ -52,12 +68,12 @@
         <section class="container-fluid">
             <div class="row">
                 <aside data-aos="fade-right" class="col-md-6 al2"></aside>
-                <aside class="col-md-6 ar2">
+                <aside class="col-md-6 ar2 bloque1">
                     <h2>Qué ofrecemos</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sint corrupti architecto error omnis
-                    quisquam! Repellendus magnam, tenetur esse, minima exercitationem id eum recusandae aut facere
-                    nam quam, deserunt necessitatibus debitis aliquam autem. Dolorem atque, impedit commodi nam,
-                    laboriosam saepe beatae labore, sed earum dolor nisi distinctio vero voluptates libero?</p>
+                        quisquam! Repellendus magnam, tenetur esse, minima exercitationem id eum recusandae aut facere
+                        nam quam, deserunt necessitatibus debitis aliquam autem. Dolorem atque, impedit commodi nam,
+                        laboriosam saepe beatae labore, sed earum dolor nisi distinctio vero voluptates libero?</p>
                 </aside>
             </div>
         </section>

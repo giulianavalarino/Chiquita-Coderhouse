@@ -18,19 +18,36 @@
 
 <body>
     <div>
-        <!--inicio de fila de logo + nav-->
-        <header>
+    <!--inicio logo + nav-->  
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
             <a class="navbar-brand" href="../index.html">
                 <img class="logo" src="../multimedia/logo-header.png" alt="Logo">
             </a>
-            <nav class="navbar navbar-expand-sm navbar-dark">
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/funciones.html">Funciones</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </nav>
-        </header>
-        <!--cierre de fila de logo + nav-->
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav barra">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--fin logo + nav-->
         <!--inicio de fila de informacion-->
         <main class="main1">
             <div class="jumbotron">
@@ -38,7 +55,7 @@
                 <p>¿Te gusta Chiquita y quieres llevarte una parte del local de recuerdo? ¡Puedes comprar nuestro
                 merchandising antes de retirarte!</p>
             </div>
-            <section class="productos container-fluid sectorProductos">
+            <section class="productos container-fluid">
                 <div class="row">
                     <div class="card col-sm-6 col-md-4 col-lg-3">
                         <img class="card-img-top" src="../multimedia/bolsas.jpg" alt="Card image">

@@ -79,7 +79,6 @@ padding: 20px;
     background-position: center;
     height: 400px;
 }
-
 .main1{
     display: flex;
     flex-flow: row wrap;
@@ -87,9 +86,6 @@ padding: 20px;
 }
 
 /*css productos*/
-.sectorProductos{
-    text-align: center;
-}
 .card{
     margin: 15px;
     padding: 5px;
@@ -153,7 +149,7 @@ header{
     background-image: linear-gradient(to bottom, #079ead, #079ead, #ffe0dd);
     margin: 15px;
 }
-.navbar{
+.barra{
     margin: 15px;
     font-family: Betty;
     font-size: 20px;
@@ -161,7 +157,7 @@ header{
     list-style: none;
 }
 nav li{
-    padding: 15px;
+    padding: 20px;
     display: inline-block;
 }
 .logo{
@@ -174,12 +170,18 @@ nav li{
 }
 nav a{
     text-decoration: none !important;
-    color: #ffe0dd;
+    color: #ffe0dd !important;
 }
 nav a:hover{
-    color: #000000;
+    color: #000000 !important;
 }
-
+nav{
+    text-align: center;
+    width: 100%;
+}
+.navbar-toggler-icon{
+    text-align: right !important;
+}
 /*css footer*/
 footer{
     height: 200px;
