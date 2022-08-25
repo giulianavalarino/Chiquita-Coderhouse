@@ -50,11 +50,22 @@ background-color: #ffe0dd;
 border-radius: 0;
 padding: 20px;
 }
+.row{
+    background-color: #ffe0dd;
+    margin: 15px;
+    padding: 20px;
+}
+.al1{
+    padding: 40px;
+}
 .ar1{
     background-image: url(../multimedia/señalética.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
+}
+.ar2{
+    padding: 40px;
 }
 .al2{
     background-image: url(../multimedia/menu.jpg);
@@ -62,10 +73,8 @@ padding: 20px;
     background-position: center;
     height: 400px;
 }
-.row{
-    background-color: #ffe0dd;
-    margin: 15px;
-    padding: 20px;
+.al3{
+    padding: 40px;
 }
 .ar3{
     background-image: url(../multimedia/restaurante-uno.jpg);
@@ -78,6 +87,9 @@ padding: 20px;
     background-size: cover;
     background-position: center;
     height: 400px;
+}
+.ar4{
+    padding: 40px;
 }
 .main1{
     display: flex;
@@ -111,7 +123,10 @@ padding: 20px;
 border-radius: 10px;
 filter: grayscale(40%);
 }
-
+.productos{
+    display: flex;
+    justify-content: space-around;
+}
 /*css funciones*/
 #multimedia{
     height: 400px;
