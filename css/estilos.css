@@ -135,6 +135,7 @@ header .barra {
   font-family: betty;
   font-size: 20px;
   list-style: none;
+  margin-left: auto;
 }
 header .logo {
   width: 150px !important;
