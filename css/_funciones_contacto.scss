@@ -1,0 +1,29 @@
+/*css funciones*/
+#multimedia{
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+/*css contacto*/
+.main3{
+    margin: 30px;
+    background-image: url(../assets/img/marble.jpg);
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    form{
+        text-align: left;
+        font-family: secondaryFont;
+        font-size: 20px;
+        height: auto;
+        width: 300px;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 4px;
+        background-image: linear-gradient(to right top, $color3, $color2, $color3);
+        border: solid 2px $color3;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+}

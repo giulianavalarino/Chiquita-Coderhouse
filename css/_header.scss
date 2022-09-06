@@ -1,0 +1,40 @@
+/*css header + nav*/
+header{
+    justify-content: space-between;
+    display: flex;
+    width: auto !important;
+    background-image: linear-gradient(to bottom, $color1, $color1, $color2);
+    margin: 15px;
+    .barra{
+        font-family: $font1;
+        font-size: 20px;
+        list-style: none;
+    }
+    .logo{
+        width: 150px !important;
+        margin: 15px;
+    }
+    .logo:hover{
+        transform: scale(1.1) !important;
+        transition: all 0.7s;
+    }
+    .navbar-toggler-icon{
+        text-align: right !important;
+    }
+}
+nav{
+    text-align: center;
+    width: 100%;
+    li{
+        padding: 20px;
+        display: inline-block;
+    }
+    a{
+        text-decoration: none !important;
+        color: $color2 !important;
+    }
+    a:hover{
+        color: $color4 !important;
+        font-size: 23px;
+    }
+}

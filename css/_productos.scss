@@ -1,0 +1,34 @@
+.card{
+    margin: 15px;
+    padding: 5px;
+    background-color: $color3;
+    text-align: center;
+    box-shadow: 1px 1px 5px $color4;
+    .btn{
+        font-family: $font1;
+        color: $color2;
+        background-color: $color1;
+    }
+    .btn:hover{
+        background-color: $color2;
+        color: $color3;
+        border: none;
+    }
+    .card-text{
+        text-align: center;
+    }
+    .card-img-top:hover{
+        transform: scale(1.1);
+        transition: all 0.3s;
+        filter: grayscale(0%);
+        filter: saturate(1.2);
+    }
+    .card-img-top{
+        border-radius: 10px;
+        filter: grayscale(40%);
+    }
+}
+.productos{
+    display: flex;
+    justify-content: space-around;
+}

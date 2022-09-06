@@ -21,7 +21,8 @@ $font2: appleGaramond;
 $color1: #079ead;
 $color2: #ffe0dd;
 $color3: #ff774c;
-$color4: Black;
+$color4: #000000;
+$color5: #c58687;
 
 /*generalidades*/
 html{
@@ -55,77 +56,30 @@ body{
         padding: 20px
     }
 }
+@mixin escrito($textAlign, $fontType, $fontSize){
+    text-align: $textAlign;
+    font-family: $fontType;
+    font-size: $fontSize;
+}
 h2{
-    text-align: center;
-    font-family: $font1;
-    font-size: 30px;
-    text-transform: capitalize;
     padding: 0px 10px 10px 10px;
+    @include escrito(center, $font1, 30px)
 }
 h3{
-    text-align: center;
-    font-family: $font1;
-    font-size: 20px;
-    text-transform: capitalize;
     padding: 10px;  
     margin: 20px;
-    padding: 10px
+    padding: 10px;
+    @include escrito(center, $font1, 20px)
 }
 p{
-    text-align: justify;
-    font-family: $font2;
-    font-size: 23px;
+    @include escrito(justify, $font2, 23px)
 }
 h4{
-    font-family: $font1;
     color: $color2;
-    padding: 15px;
-    font-size: 20px;
-}
-
-/*css header + nav*/
-header{
-    justify-content: space-between;
-    display: flex;
-    width: auto !important;
-    background-image: linear-gradient(to bottom, $color1, $color1, $color2);
-    margin: 15px;
-    .barra{
-        font-family: $font1;
-        font-size: 20px;
-        list-style: none;
-    }
-    .logo{
-        width: 150px !important;
-        margin: 15px;
-    }
-    .logo:hover{
-        transform: scale(1.1) !important;
-        transition: all 0.7s;
-    }
-    .navbar-toggler-icon{
-        text-align: right !important;
-    }
-}
-nav{
-    text-align: center;
-    width: 100%;
-    li{
-        padding: 20px;
-        display: inline-block;
-    }
-    a{
-        text-decoration: none !important;
-        color: $color2 !important;
-    }
-    a:hover{
-        color: $color4 !important;
-        font-size: 23px;
-    }
+    @include escrito(center, $font1, 20px)
 }
 
 /*css index + nosotros*/
-
 .row{
     background-color: $color2;
     margin: 15px;
@@ -144,24 +98,18 @@ nav{
     }
     .al2{
         background-image: url(../multimedia/menu.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 400px;
+        @extend .ar1
     }
     .al3{
         padding: 40px;
     }
     .ar3{
         background-image: url(../multimedia/restaurante-uno.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 400px;
+        @extend .ar1
     }
     .al4{
         background-image: url(../multimedia/restaurante-dos.jfif.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 400px;
+        @extend .ar1
     }
     .ar4{
         padding: 40px;
@@ -175,108 +123,19 @@ nav{
     }
 }
 
-/*css productos*/
-.card{
-    margin: 15px;
-    padding: 5px;
-    background-color: $color3;
-    text-align: center;
-    box-shadow: 1px 1px 5px $color4;
-    .btn{
-        font-family: $font1;
-        color: $color2;
-        background-color: $color1;
-    }
-    .btn:hover{
-        background-color: $color2;
-        color: $color3;
-        border: none;
-    }
-    .card-text{
-        text-align: center;
-    }
-    .card-img-top:hover{
-        transform: scale(1.1);
-        transition: all 0.3s;
-        filter: grayscale(0%);
-        filter: saturate(1.2);
-    }
-    .card-img-top{
-        border-radius: 10px;
-        filter: grayscale(40%);
-    }
-}
-.productos{
-    display: flex;
-    justify-content: space-around;
-}
+/*header + nav import*/
+@import "_header";
 
-/*css funciones*/
-#multimedia{
-    height: 400px;
-    width: 100%;
-    padding: 20px;
-}
+/*productos import*/
+@import "_productos";
 
-/*css contacto*/
-.main3{
-    margin: 30px;
-    background-image: url(../assets/img/marble.jpg);
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
-    form{
-        text-align: left;
-        font-family: secondaryFont;
-        font-size: 20px;
-        height: auto;
-        width: 300px;
-        padding: 30px;
-        margin: 30px;
-        border-radius: 4px;
-        background-image: linear-gradient(to right top, $color3, $color2, $color3);
-        border: solid 2px $color3;
-        margin-top: 50px;
-        border-radius: 5px;
-    }
-}
+/*funciones + contacto import*/
+@import "_funciones_contacto";
 
-/*css footer*/
-footer{
-    height: 200px;
-    width: auto;
-    background-image: linear-gradient(to top, $color1, $color1, $color2);
-    font-family: $font2;
-    text-align: center;
-    padding: 20px;
-    margin: 15px;
-    p{
-        margin-bottom: 10px;
-        font-size: 15px;
-        color: $color2;
-        text-align: center;
-    }
-    i{
-        color: $color2;
-        font-size: 25px;
-        padding: 15px 5px 15px 5px;
-    }
-}
+/*footer + subir import*/
+@import "_footer";
 
-/*subir*/
-.subir{
-    height: 50px;
-    width: 50px;
-    background-color: $color1;
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50px;
-    border: 2px solid $color2;
-    color: $color2;
-}
+
 
 
 
