@@ -84,6 +84,8 @@ h4{
     background-color: $color2;
     margin: 15px;
     padding: 20px;
+    display: flex !important;
+    align-items: center !important;
     .al1{
         padding: 40px;
     }
@@ -91,7 +93,7 @@ h4{
         background-image: url(../multimedia/señalética.jpg);
         background-size: cover;
         background-position: center;
-        height: 400px;
+        height: 500px;
     }
     .ar2{
         padding: 40px;
@@ -116,7 +118,7 @@ h4{
     }
     iframe{
         width: 100%;
-        height: 100%;
+        height: 400px;
     }
     .al5{
         padding: 40px;
@@ -135,7 +137,8 @@ h4{
 /*footer + subir import*/
 @import "_footer";
 
-
+/*responsive import*/
+@import "_responsive"
 
 
 

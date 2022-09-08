@@ -1,0 +1,30 @@
+/*vista celular*/
+@media only screen and (max-width: 767px) {
+    .row{
+        margin: 0px;
+        margin-top: 15px;
+        
+        .al1{
+        padding: 10px;
+        }
+        .ar2{
+            padding: 10px;
+        }
+        .al5{
+            padding: 10px;
+        }
+        .al3{
+            padding: 10px;
+        }
+        .ar4{
+            padding: 10px;
+        }
+    }
+    .jumbotron{
+        margin: 15px;
+    }
+    .inverso{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+}
